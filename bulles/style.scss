@@ -72,58 +72,50 @@ body{
 }
 
 .item1{
-    background-color: red;
-    z-index: 0;
+    background-color: rgb(random(255), random(255), random(255));
     transform: translateX(300px);
     transition-delay: 0s;
 }
 
 .item2{
-    background-color: green;
-    z-index: 0;
+    background-color: rgb(random(255), random(255), random(255));
     transform: translate(200px, 200px);
     transition-delay: 0.15s;
 }
 
 .item3{
-    background-color: blue;
-    z-index: 0;
+    background-color: rgb(random(255), random(255), random(255));
     transform: translateY(300px);
     transition-delay: 0.3s;
 }
 
 .item4{
-    background-color: green;
-    z-index: 0;
+    background-color: rgb(random(255), random(255), random(255));
     transform: translate(-200px, 200px);
     transition-delay: 0.45s;
 }
 
 
 .item5{
-    background-color: blue;
-    z-index: 0;
+    background-color: rgb(random(255), random(255), random(255));
     transform: translateX(-300px);
     transition-delay: 0.60s;
 }
 
 .item6{
-    background-color: green;
-    z-index: 0;
+    background-color: rgb(random(255), random(255), random(255));
     transform: translate(-200px, -200px);
     transition-delay: 0.75s;
 }
 
 .item7{
-    background-color: blue;
-    z-index: 0;
+    background-color: rgb(random(255), random(255), random(255));
     transform: translateY(-300px);
     transition-delay: 0.90s;
 }
 
 .item8{
-    background-color: green;
-    z-index: 0;
+    background-color: rgb(random(255), random(255), random(255));
     transform: translate(200px, -200px);
     transition-delay: 1.05s;
 }
