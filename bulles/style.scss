@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(83, 83, 83);
+}
+
+.btn-center{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+    z-index: 10;
+    cursor: pointer;
+
+    .lignes_btn{
+        position: absolute;
+        left: 50%;
+        width: 70%;
+        height: 3px;
+        background-color: black;
+        transform: translateX(-50%);
+        border-radius: 6px;
+        transition-duration: 0.3s;
+    }
+
+    .lignes_btn:nth-child(1){
+        top: 25px;
+    }
+    .lignes_btn:nth-child(2){
+        bottom: 25px;
+    }
+    .lignes_btn:nth-child(3){
+        top: 50%;
+    }
+
+}
+
+// Si le bouton porte la classe "active" --> on attribue ces propriétés css
+
+.btn-center.active{
+
+    .lignes_btn:nth-child(1){
+        top: 50%;
+        transform: translateX(-50%) rotate(135deg);
+    }
+    .lignes_btn:nth-child(2){
+        opacity: 0;
+    }
+    .lignes_btn:nth-child(3){
+        top: 50%;
+        transform:translateX(-50%) rotate(-135deg);
+
+    }
+}
+
+.btn-item{
+    top: 40%;
+    left: 50%;
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 0.5s;
+}
+
+.item1{
+    background-color: red;
+    z-index: 0;
+    transform: translateX(300px);
+    transition-delay: 0s;
+}
+
+.item2{
+    background-color: green;
+    z-index: 0;
+    transform: translate(200px, 200px);
+    transition-delay: 0.15s;
+}
+
+.item3{
+    background-color: blue;
+    z-index: 0;
+    transform: translateY(300px);
+    transition-delay: 0.3s;
+}
+
+.item4{
+    background-color: green;
+    z-index: 0;
+    transform: translate(-200px, 200px);
+    transition-delay: 0.45s;
+}
+
+
+.item5{
+    background-color: blue;
+    z-index: 0;
+    transform: translateX(-300px);
+    transition-delay: 0.60s;
+}
+
+.item6{
+    background-color: green;
+    z-index: 0;
+    transform: translate(-200px, -200px);
+    transition-delay: 0.75s;
+}
+
+.item7{
+    background-color: blue;
+    z-index: 0;
+    transform: translateY(-300px);
+    transition-delay: 0.90s;
+}
+
+.item8{
+    background-color: green;
+    z-index: 0;
+    transform: translate(200px, -200px);
+    transition-delay: 1.05s;
+}
+
+// 1.6s
+
+.return{
+    top: 40%;
+    left: 50%;
+    transform: translate(0px, 0px);
+}
